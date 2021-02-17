@@ -178,25 +178,25 @@ copyright = "Hobbin"            # default: author.name ↓        # 默认为下
 
   [params.reward]                                         # 文章打赏
     enable = true
-    wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
-    alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
+    wechat = "../../static/img/charge/charge_wechat.png"           # 微信二维码
+    alipay = "../../static/img/charge/charge_alipay.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://localhost:1313"
+    a-email = "mailto:another_bingo@126.com"
+    #b-stack-overflow = "http://localhost:1313"
     #c-twitter = "http://localhost:1313"
     #d-facebook = "http://localhost:1313"
     #e-linkedin = "http://localhost:1313"
     #f-google = "http://localhost:1313"
-    g-github = "http://localhost:1313"
+    g-github = "https://github.com/whbsdu"
     #h-weibo = "http://localhost:1313"
-    i-zhihu = "http://localhost:1313"
+    i-zhihu = "https://www.zhihu.com/people/bingo-16-57"
     #j-douban = "http://localhost:1313"
     #k-pocket = "http://localhost:1313"
     #l-tumblr = "http://localhost:1313"
     #m-instagram = "http://localhost:1313"
     #n-gitlab = "http://localhost:1313"
-    o-bilibili = "http://localhost:1313"
+    #o-bilibili = "http://localhost:1313"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
