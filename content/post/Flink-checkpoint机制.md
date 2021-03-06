@@ -1,6 +1,6 @@
 ---
 title: "Flink Checkpoint机制"
-date: 2019-07-16T22:21:05+08:00
+date: 2019-08-16T22:21:05+08:00
 draft: false
 tags: ["flink", "checkpoint"]
 categories: ["分布式"]
@@ -40,7 +40,7 @@ barrier在数据源端插入，当快照n的barrier插入后，系统会记录�
 4. 经过以上步骤，算子恢复所有输入流数据的处理，优先处理输入缓存中的数据。
 
 #### checkpoint的过程
-![data-stream-partner](../../static/img/20210306/data-stream-partner.png)
+![checkpoint-partner](../../static/img/20210306/checkpoint-partner.png)
 
 Flink 实时任务一次 Checkpoint 的参与者主要包括三块：JobManager、TaskManager以及 Zookeeper。JobManager 定时会触发执行 Checkpoint，具体则是在 JobManager 中运行的 CheckpointCoordinator 中触发所有 Source 的 SubTask 向下游广播 CheckpointBarrier。
 

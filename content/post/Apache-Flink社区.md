@@ -23,3 +23,4 @@ author: ""
 * [Flink wiki](https://cwiki.apache.org/confluence/display/FLINK/Apache+Flink+Home)
 * [Flink People](https://flink.apache.org/community.html#people)
 * [Flink中文社区](http://forum.flink-china.org/top)
+* [Flink技术点一张图 - Apache-Flink-Stateful-Computations-over-Data-Streams, 提取码:h9yd](https://pan.baidu.com/s/1takDys1K1yrqODoJEh8X9g)
