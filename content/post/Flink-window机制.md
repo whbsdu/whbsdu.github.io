@@ -255,7 +255,7 @@ keyedStream
 
 Flink的窗口机制及各组件之间的分工如图所示。
 
-![flink-time-2](../../static/img/20210307/flink-time-2.png)
+![flink-window-2](../../static/img/20210307/flink-window-2.png)
 
 1. 首先上图中的组件都位于一个算子（window operator）中，数据流源源不断地进入算子，每一个到达的元素都会被交给 WindowAssigner。WindowAssigner 会决定元素被放到哪个或哪些窗口（window），可能会创建新窗口。因为一个元素可以被放入多个窗口中，所以同时存在多个窗口是可能的。注意，Window本身只是一个ID标识符，其内部可能存储了一些元数据，如TimeWindow中有开始和结束时间，但是并不会存储窗口中的元素。窗口中的元素实际存储在 Key/Value State 中，key为Window，value为元素集合（或聚合值）。为了保证窗口的容错性，该实现依赖了 Flink 的 State 机制。
 
