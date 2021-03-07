@@ -17,7 +17,7 @@ Flink程序的执行是并发和分布式的，在执行期间，一个流（str
 * 一对一方式：意味着在两个算子中保持元素的分片和顺序。比如map()算子的subtask[1]会看到souce算子的subtask[1]生产的元素，且顺序和后者生产的顺序保持一致。
 * 重新分配方式：每个算子子任务发送数据到不同目标子任务。比如上面的map()算子和keyBy()/window()算子，keyBy()/window()算子和sink算子。常见的会重新分配的算子有：keyBy()（通过对key进行hash，实现re-partition），broadcast()，rebalance()（随机re-partition）。在重新分配后，只有在一对发送、接收子任务内的元素才是有序的（比如map()的subtask[1]和KeyBy()/window()的subtask[2]）。所以在这个例子中，并行机制保证每个key内部的顺序，但是不同key到达sink后聚合结果的顺序不能保证。
 
-### Flink Parallelism设置
+### Flink Parallelism配置
 
 任务（task）的并发度有不同层级的设置。优先级： 算子设置并行度  > env设置并行度 > 客户端设置并行度 > 系统设置并行度 
 
