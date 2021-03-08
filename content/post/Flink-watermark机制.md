@@ -48,17 +48,12 @@ override def getCurrentWatermark(): Watermark = {
 
 1. Flink如何处理乱序？
 
-watermark+window机制。window中可以对input进行按照Event Time排序，使得完全按照Event Time发生的顺序去处理数据，以达到处理乱序数据的目的。
+Flink 基于watermark + window机制来处理乱序，window中可以对input按照Event Time排序，使得完全按照Event Time发生的顺序去处理数据，以达到处理乱序数据的目的。
 
 2. Flink何时触发window？
 
-对于late element太多的数据而言
-
-Event Time < watermark时间
-对于out-of-order以及正常的数据而言
-
-watermark时间 >= window_end_time
-在[window_start_time,window_end_time)中有数据存在
+* watermark时间 >= window_end_time  
+* 在[window_start_time,window_end_time)中有数据存在
 
 ### 参考
 
