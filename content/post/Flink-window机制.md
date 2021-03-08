@@ -267,6 +267,64 @@ Flink的窗口机制及各组件之间的分工如图所示。
 
 Flink 对于一些聚合类的窗口计算（如sum,min）做了优化，因为聚合类的计算不需要将窗口中的所有数据都保存下来，只需要保存一个result值就可以了。每个进入窗口的元素都会执行一次聚合函数并修改result值。这样可以大大降低内存的消耗并提升性能。但是如果用户定义了 Evictor，则不会启用对聚合窗口的优化，因为 Evictor 需要遍历窗口中的所有元素，必须要将窗口中所有元素都存下来。
 
+### Flink window示例
+
+```scala
+package org.apache.flink.streaming.scala.examples.socket
+
+import org.apache.flink.api.java.utils.ParameterTool
+import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.windowing.time.Time
+
+object SocketWindowWordCount {
+
+  /** Main program method */
+  def main(args: Array[String]) : Unit = {
+
+    // the host and the port to connect to
+    var hostname: String = "localhost"
+    var port: Int = 0
+
+    try {
+      val params = ParameterTool.fromArgs(args)
+      hostname = if (params.has("hostname")) params.get("hostname") else "localhost"
+      port = params.getInt("port")
+    } catch {
+      case e: Exception => {
+        System.err.println("No port specified. Please run 'SocketWindowWordCount " +
+          "--hostname <hostname> --port <port>', where hostname (localhost by default) and port " +
+          "is the address of the text server")
+        System.err.println("To start a simple text server, run 'netcat -l <port>' " +
+          "and type the input text into the command line")
+        return
+      }
+    }
+    
+    // get the execution environment
+    val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
+    
+    // get input data by connecting to the socket
+    val text: DataStream[String] = env.socketTextStream(hostname, port, '\n')
+
+    // parse the data, group it, window it, and aggregate the counts 
+    val windowCounts = text
+          .flatMap { w => w.split("\\s") }
+          .map { w => WordWithCount(w, 1) }
+          .keyBy(_.word)
+          .timeWindow(Time.seconds(5))
+          .sum("count")
+
+    // print the results with a single thread, rather than in parallel
+    windowCounts.print().setParallelism(1)
+
+    env.execute("Socket Window WordCount")
+  }
+
+  /** Data type for words with count */
+  case class WordWithCount(word: String, count: Long)
+}
+```
+
 ### 参考
 
 * [Introducing Stream Windows in Apache Flink](https://flink.apache.org/news/2015/12/04/Introducing-windows.html)
