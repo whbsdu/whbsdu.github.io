@@ -14,7 +14,7 @@ author: ""
 
 ### Flink Checkpoint过程
 #### 启动checkpoint
-想要使用Flink Checkpoint功能，首先是要在实时任务开启Checkpoing，Flink默认关闭Checkpoint。
+想要使用Flink Checkpoint功能，首先是要在实时任务开启Checkpoint，Flink默认关闭Checkpoint。
  ```java
  StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
  env.enableCheckpointing(60000, CheckpointingMode.EXACTLY_ONCE);

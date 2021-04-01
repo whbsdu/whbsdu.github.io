@@ -9,7 +9,7 @@ author: ""
 
 <!-- from evernote: Flink中的window机制 -->
 
-> Flink认为Bach是Streaming的一个特例，而window就是从Streaming到Batch的一个桥梁，window提供了一种处理无界数据的手段。
+> Flink认为Batch是Streaming的一个特例，而window就是从Streaming到Batch的一个桥梁，window提供了一种处理无界数据的手段。
 
 ### Flink的时间
 
