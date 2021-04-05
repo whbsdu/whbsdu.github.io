@@ -7,7 +7,7 @@ categories: []
 author: ""
 ---
 
-> Flink内部节点之间的通信是用Akka，比如JobManager和TaskManager之间的通信。而operator之间的数据传输是利用Netty。（Spark的内部数据传输也是基于Nettty）。
+> Flink内部节点之间的通信是用Akka，比如JobManager和TaskManager之间的通信。而operator之间的数据传输是利用Netty（Spark的内部数据传输也是基于Nettty）。
 
 # Flink内部通信组件 - Akka
 
@@ -53,7 +53,7 @@ actor基于层次化的组织形式（也就是说它基于树形结构）。每
 
 ## Netty简介
 
-Netty是一个NIO客户端-服务器框架，（Java NIO是在jdk1.4开始使用的，它既可以说成“新IO”，也可以说成非堵塞式IO，[参考](https://blog.csdn.net/charjay_lin/article/details/81810922) ）。Netty支持快速、简单地开发网络应用程序，如协议服务器和客户机，大大简化了网络编程，如TCP和UDP套接字服务器。Netty经过精心设计，并积累了许多协议（如ftp、smtp、http）的实施经验，以及各种二进制基于文本的遗留协议。因此，Netty成功找到了一种方法，可以在不妥协的情况下实现轻松的开发、性能、稳定性和灵活性。
+Netty是一个NIO客户端-服务器框架，（Java NIO是在jdk1.4开始使用的，它既可以说成“新IO”，也可以说成非堵塞式IO，参考[Java NIO](https://blog.csdn.net/charjay_lin/article/details/81810922) ）。Netty支持快速、简单地开发网络应用程序，如协议服务器和客户机，大大简化了网络编程，如TCP和UDP套接字服务器。Netty经过精心设计，并积累了许多协议（如ftp、smtp、http）的实施经验，以及各种二进制基于文本的遗留协议。因此，Netty成功找到了一种方法，可以在不妥协的情况下实现轻松的开发、性能、稳定性和灵活性。
 
 Netty架构图：
 
@@ -168,6 +168,6 @@ NioEventLoopGroup 相当于 1 个事件循环组，这个组里包含多个事�
 # 参考
 
 * [Akka在Flink中的应用](https://www.jianshu.com/p/e48d83e39a2f)
-* [Akka and Actors](https://cwiki.apache.org/confluence/display/FLINK/Akka+and+Actors  https://blog.csdn.net/hxcaifly/article/details/84998240)
+* [Akka and Actors](https://cwiki.apache.org/confluence/display/FLINK/Akka+and+Actors) 
 * [Akka在Flink中的使用剖析](https://yq.aliyun.com/articles/259163/)
 * [Netty原理总结](https://blog.csdn.net/hxcaifly/article/details/85336795)
