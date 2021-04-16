@@ -148,7 +148,7 @@ ClickHouse使用异步的多主复制技术。当数据被写入任何一个可�
 
 ClickHouse的公开资料比较少，架构设计层面很难找到完整的资料，甚至没有一张整体的架构图。下面是摘自《ClickHouse原理解析与应用实践》的ClickHouse核心架构模块。
 
-![clickhouse-arch](../../static/img/20210405/clickhouse-arch.png)
+![clickhouse-arch](../../static/img/20210405/clickhouse-arch-01.png)
 
 * Column 和 Field
 
@@ -233,6 +233,14 @@ ClickHouse的集群由分片（Shard）组成，而每个分片又通过副本�
 
 使用Clickhouse针对大数据量的数据进行聚合计算来提取特征
 场景举例：用户行为实时分析OLAP应用场景
+
+## ClickHouse的缺点
+
+* 不支持Transaction：想快就别想Transaction
+
+* 聚合结果必须小于一台机器的内存大小：不是大问题
+
+* 缺少完整的Update/Delete操作
 
 # Presto
 
