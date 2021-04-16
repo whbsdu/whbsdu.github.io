@@ -146,9 +146,11 @@ ClickHouse使用异步的多主复制技术。当数据被写入任何一个可�
 
 ## ClickHouse架构
 
+![clickhouse-arch](../../static/img/20210405/clickhouse-arch-01.png)
+
 ClickHouse的公开资料比较少，架构设计层面很难找到完整的资料，甚至没有一张整体的架构图。下面是摘自《ClickHouse原理解析与应用实践》的ClickHouse核心架构模块。
 
-![clickhouse-arch](../../static/img/20210405/clickhouse-arch-01.png)
+![clickhouse-arch](../../static/img/20210405/clickhouse-arch.png)
 
 * Column 和 Field
 
