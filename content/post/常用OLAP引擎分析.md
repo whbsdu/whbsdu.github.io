@@ -486,16 +486,27 @@ time-series（时间序列）模式是根据其发生时间组织和键入数据
 
 公司从多个来源生成数据并将其存储在各种系统和格式中。例如，您的一些数据可能存储在 Kudu，一些在传统的 RDBMS 中，一些在 HDFS 中的文件中。您可以使用 Impala 访问和查询所有这些源和格式，而无需更改旧版系统。
 
+* 各种引擎的性能对比
+
+[ClickHouse官方性能测试](https://clickhouse.yandex/benchmark.html) : clickhouse比Hive快279倍，比MySQL 快801倍
+[ClickHouse VS Spark](https://www.percona.com/blog/2017/03/17/column-store-database-benchmarks-mariadb-columnstore-vs-clickhouse-vs-apache-spark/) : clickhouse比spark快3~200倍
+[Presto、HAWQ、ClickHouse、GreenPlum ](https://zhuanlan.zhihu.com/p/54907288) :  ClickHouse单表查询性能第一
+[ClickHouse其他性能指标对比](https://clickhouse.tech/#independent-benchmarks)
+
+
+
 # 参考
 
 * [Druid官方文档](https://druid.apache.org/docs/latest/design/)
 * [Druid中文文档](http://www.apache-druid.cn/) 
 * [实时OLAP系统Druid](https://zhuanlan.zhihu.com/p/79719233)
 * [System Properties Comparison Apache Druid vs. ClickHouse vs. Greenplum](https://db-engines.com/en/system/Apache+Druid%3BClickHouse%3BGreenplum)
+* [ClickHouse中文文档](https://clickhouse.tech/docs/zh/)
 * [ClickHouse深度揭秘](https://zhuanlan.zhihu.com/p/98135840)
 * [ClickHouse原理解析与实践](http://www.360doc.com/content/20/0719/08/22849536_925250448.shtml)
 * [ClickHouse适用场景](https://zhuanlan.zhihu.com/p/117326011)
+* [ClickHouse分布式表和本地表](https://www.cnblogs.com/yisany/p/13524018.html)
 * [一文读懂Kudu](https://www.jianshu.com/p/83290cd817ac)
 * [presto架构和原理](https://www.cnblogs.com/GO-NO-1/p/12156153.html)
 * [Presto的应用场景与案例](https://zhuanlan.zhihu.com/p/260653669)
-*[kudu介绍](https://www.jianshu.com/p/93c602b637a4)
+* [kudu介绍](https://www.jianshu.com/p/93c602b637a4)
