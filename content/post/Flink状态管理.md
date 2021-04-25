@@ -1,6 +1,6 @@
 ---
 title: "Flink状态管理"
-date: 2019-07-15T22:12:09+08:00
+date: 2020-07-15T22:12:09+08:00
 draft: false
 tags: ["分布式", "Flink", "状态", "state"]
 categories: ["分布式"]
