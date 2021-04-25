@@ -152,3 +152,4 @@ Kappa架构的原理就是：在Lambda 的基础上进行了优化，删除了 B
 * [Lambda architecture](http://lambda-architecture.net/)
 * [Kappa architecture](http://milinda.pathirage.org/kappa-architecture.com/)
 * [CAP理论及历史质疑](https://blog.csdn.net/chen77716/article/details/30635543)
+* [大数据架构如何做到流批一体](https://www.infoq.cn/article/uo4pfswlmzbvhq*y2tb9)
