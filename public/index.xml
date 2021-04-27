@@ -1,9 +1,174 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title></title>
-        <link>https://example.com/</link>
-        <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-            <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hobbin&#39;s Blog - A programmer focus on data science</title>
+    <link>http://hobbin.wang/</link>
+    <description>Recent content on Hobbin&#39;s Blog - A programmer focus on data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Hobbin | 京ICP备2020044746号-1</copyright>
+    <lastBuildDate>Thu, 22 Apr 2021 17:35:03 +0800</lastBuildDate><atom:link href="http://hobbin.wang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lambda架构和Kappa架构</title>
+      <link>http://hobbin.wang/post/lambda%E6%9E%B6%E6%9E%84%E5%92%8Ckappa%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Thu, 22 Apr 2021 17:35:03 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/lambda%E6%9E%B6%E6%9E%84%E5%92%8Ckappa%E6%9E%B6%E6%9E%84/</guid>
+      <description>Lambda架构 Lambda架构是由Storm的作者Nathan Marz根据多年分布式大数据系统的经验提炼的一个实时大数据处理框架。Lamb</description>
+    </item>
+    
+    <item>
+      <title>文档型数据库、列数据库和图数据库分析</title>
+      <link>http://hobbin.wang/post/%E6%96%87%E6%A1%A3%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%97%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%86%E6%9E%90/</link>
+      <pubDate>Fri, 09 Apr 2021 15:15:11 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/%E6%96%87%E6%A1%A3%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%97%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%86%E6%9E%90/</guid>
+      <description>对比常用文档型数据库，如ElasticSearch、MongoDB，图数据库，如JanusGraph、Neo4J等。 ElasticSearch 数据模型：文档型数据库</description>
+    </item>
+    
+    <item>
+      <title>常用OLAP引擎分析</title>
+      <link>http://hobbin.wang/post/%E5%B8%B8%E7%94%A8olap%E5%BC%95%E6%93%8E%E5%88%86%E6%9E%90/</link>
+      <pubDate>Fri, 02 Apr 2021 13:15:26 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/%E5%B8%B8%E7%94%A8olap%E5%BC%95%E6%93%8E%E5%88%86%E6%9E%90/</guid>
+      <description>Druid、ClickHouse、Presto、Impala、Kudu等常用OLAP引擎分析。 OLAP场景的特点 读多于写，不同于OLTP场景</description>
+    </item>
+    
+    <item>
+      <title>Flink内部通信组件</title>
+      <link>http://hobbin.wang/post/flink%E5%86%85%E9%83%A8%E9%80%9A%E4%BF%A1%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Tue, 23 Mar 2021 09:49:16 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink%E5%86%85%E9%83%A8%E9%80%9A%E4%BF%A1%E7%BB%84%E4%BB%B6/</guid>
+      <description>Flink内部节点之间的通信是用Akka，比如JobManager和TaskManager之间的通信。而operator之间的数据传输是利用</description>
+    </item>
+    
+    <item>
+      <title>实时数仓模型</title>
+      <link>http://hobbin.wang/post/%E5%AE%9E%E6%97%B6%E6%95%B0%E4%BB%93%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 01 Mar 2021 13:40:45 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/%E5%AE%9E%E6%97%B6%E6%95%B0%E4%BB%93%E6%A8%A1%E5%9E%8B/</guid>
+      <description>实时数仓分层架构 实时数仓存储方案 实时数仓计算引擎 引擎 Flink Spark Streaming Storm 处理模式 逐条流式处理 微批处理 逐条流式处理 延迟 毫秒级 秒级 毫秒级 API 流处理API、批处</description>
+    </item>
+    
+    <item>
+      <title>Markdown table convert</title>
+      <link>http://hobbin.wang/templates/table-convet/</link>
+      <pubDate>Sat, 20 Feb 2021 16:01:23 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/templates/table-convet/</guid>
+      <description>安利一个很好用的markdown表格编辑工具</description>
+    </item>
+    
+    <item>
+      <title>数仓层级模型</title>
+      <link>http://hobbin.wang/post/%E6%95%B0%E4%BB%93%E5%B1%82%E7%BA%A7%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 15 Feb 2021 22:23:45 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/%E6%95%B0%E4%BB%93%E5%B1%82%E7%BA%A7%E6%A8%A1%E5%9E%8B/</guid>
+      <description>定义 数据仓库是一个面向主题的、集成的、随时间变化的、但信息本身相对稳定的数据集合，用于对管理决策过程的支持。 特点 面向主题：数据仓库都是基于某</description>
+    </item>
+    
+    <item>
+      <title>存储引擎选型</title>
+      <link>http://hobbin.wang/post/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E9%80%89%E5%9E%8B/</link>
+      <pubDate>Mon, 01 Feb 2021 21:26:29 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E9%80%89%E5%9E%8B/</guid>
+      <description>分布式存储引擎对比。 选型 对象存储（S3） + 文档型存储（MongoDB） 数据仓库（Hive） 数据湖解决方案 场景 对象存储S3定位于分布式海量数据</description>
+    </item>
+    
+    <item>
+      <title>Flink反压机制</title>
+      <link>http://hobbin.wang/post/flink%E5%8F%8D%E5%8E%8B%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Thu, 19 Nov 2020 22:46:32 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink%E5%8F%8D%E5%8E%8B%E6%9C%BA%E5%88%B6/</guid>
+      <description>反压产生的场景 短时负载高峰导致系统接收数据的速率远高于它处理数据的速率。许多日常问题都会导致反压，例如，垃圾回收停顿可能会导致流入的数据快速</description>
+    </item>
+    
+    <item>
+      <title>Flink Watermark机制</title>
+      <link>http://hobbin.wang/post/flink-watermark%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Fri, 16 Oct 2020 22:21:18 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink-watermark%E6%9C%BA%E5%88%B6/</guid>
+      <description>WaterMark, latency, checkpoint 这三者实现方式都是上游节点逐步广播消息给下游节点来处理的行为（都是在流中插入一种特殊的数据结构来处理）。 时间语义 Flink有三种时间语</description>
+    </item>
+    
+    <item>
+      <title>Flink Window机制</title>
+      <link>http://hobbin.wang/post/flink-window%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Wed, 16 Sep 2020 22:49:04 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink-window%E6%9C%BA%E5%88%B6/</guid>
+      <description>Flink认为Batch是Streaming的一个特例，而window就是从Streaming到Batch的一个桥梁，window提供了一种</description>
+    </item>
+    
+    <item>
+      <title>Flink Checkpoint机制</title>
+      <link>http://hobbin.wang/post/flink-checkpoint%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Sun, 16 Aug 2020 22:21:05 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink-checkpoint%E6%9C%BA%E5%88%B6/</guid>
+      <description>基于分布式快照的Checkpoint机制是Flink的容错机制的一大亮点，Flink可以通过Checkpoint实现exactly-once</description>
+    </item>
+    
+    <item>
+      <title>Flink状态管理</title>
+      <link>http://hobbin.wang/post/flink%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Wed, 15 Jul 2020 22:12:09 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</guid>
+      <description>Flink最区别于其他流式计算引擎的，其实就是状态管理。 1.什么是状态 在数据处理任务中，经常要对数据进行统计，如Sum、Count、Min、</description>
+    </item>
+    
+    <item>
+      <title>分布式一致性算法</title>
+      <link>http://hobbin.wang/post/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Thu, 18 Jun 2020 21:59:47 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95/</guid>
+      <description>分布式一致性算法：2PC、3PC、Paxos算法、Raft算法、Gossip算法。 2PC和3PC 2PC，二阶段提交协议，即将事务的提交过程分</description>
+    </item>
+    
+    <item>
+      <title>Flink作业并行度配置</title>
+      <link>http://hobbin.wang/post/flink%E5%B9%B6%E8%A1%8C%E5%BA%A6%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 25 May 2020 15:28:58 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink%E5%B9%B6%E8%A1%8C%E5%BA%A6%E9%85%8D%E7%BD%AE/</guid>
+      <description>Flink程序的并行执行 Flink程序的执行是并发和分布式的，在执行期间，一个流（stream）会有一个或者多个流分片（stream part</description>
+    </item>
+    
+    <item>
+      <title>Flink作业管理</title>
+      <link>http://hobbin.wang/post/flink%E4%BD%9C%E4%B8%9A%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Wed, 20 May 2020 15:23:04 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/flink%E4%BD%9C%E4%B8%9A%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9D%97/</guid>
+      <description>Flink集群架构 Flink运行时包含两类进程：JobManager和TaskManager。其中JobManager负责协调分布式计算，包</description>
+    </item>
+    
+    <item>
+      <title>Apache Flink社区</title>
+      <link>http://hobbin.wang/post/apache-flink%E7%A4%BE%E5%8C%BA/</link>
+      <pubDate>Fri, 15 May 2020 21:48:01 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/apache-flink%E7%A4%BE%E5%8C%BA/</guid>
+      <description>Apache Flink作为对当前国内炙手可热的流式计算框架，在阿里的积极布道、运作下，有望成为大数据实时计算的实际标准。 Flink社区 Flink mailing list Flink</description>
+    </item>
+    
+    <item>
+      <title>流式计算概述</title>
+      <link>http://hobbin.wang/post/%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%A6%82%E8%BF%B0/</link>
+      <pubDate>Fri, 17 May 2019 11:30:32 +0800</pubDate>
+      
+      <guid>http://hobbin.wang/post/%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%A6%82%E8%BF%B0/</guid>
+      <description>流式计算相关概念。 1.流式计算 1.1 概念 流式计算(stream processing)是用于处理无界数据集的计算，包括真正的流式和通过微批(mic</description>
+    </item>
+    
+  </channel>
 </rss>
