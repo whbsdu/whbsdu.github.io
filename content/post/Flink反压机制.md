@@ -166,3 +166,4 @@ public void channelWritabilityChanged(ChannelHandlerContext ctx) throws Exceptio
 ### 参考
 
 * [Flink原理与实现：如何处理反压问题](https://blog.csdn.net/u013343882/article/details/82454408)
+* [如何处理反压](https://zhuanlan.zhihu.com/p/90882180)
