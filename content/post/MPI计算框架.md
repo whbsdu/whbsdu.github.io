@@ -1,13 +1,10 @@
 ---
-title: "数仓数据建模"
-date: 2021-05-18T09:22:13+08:00
+title: "MPI计算框架"
+date: 2021-05-15T09:07:13+08:00
 draft: false
 tags: []
 categories: []
 author: ""
 ---
 
-* [收藏！数据建模最全知识体系解读](https://zhuanlan.zhihu.com/p/300643260)
-* [通俗易懂数仓建模—Inmon 范式建模与 Kimball 维度建模](https://zhuanlan.zhihu.com/p/362991213)
-
-
+> MPI是一种基于消息传递的并行计算框架，由于没有IO操作，性能优于MapReduce。
