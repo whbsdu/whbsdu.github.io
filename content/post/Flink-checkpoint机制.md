@@ -61,7 +61,7 @@ Flink Checkpoint 支持两种语义：Exactly_Once 和 At_least_Once，默认的
 Flink Savepoint的底层原理和Flink Checkpoint几乎一致，都是用来保存Flink作业内部状态的快照机制，只有一些小的不同，不同点如下：
 1. checkpoint是定期自动触发的，会过期；而savepoint需要手动触发，并且不会过期。
 2. checkpoint用于Flink任务故障时自动重启任务，而savepoint通常存储在外部，通常会启动一个“新”的任务。Savepoint使用的场景有：
-* buf fixing
+* bug fixing
 * flink版本升级
 * A/B testing等
 3. 使用savepoint的前提
