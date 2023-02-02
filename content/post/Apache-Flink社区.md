@@ -3,7 +3,7 @@ title: "Apache Flink社区"
 date: 2020-05-15T21:48:01+08:00
 draft: false
 tags: ["Flink", "实时计算"]
-categories: ["分布式"]
+categories: ["技术"]
 author: ""
 ---
 

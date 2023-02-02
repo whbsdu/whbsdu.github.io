@@ -3,7 +3,7 @@ title: "Flink Window机制"
 date: 2020-09-16T22:49:04+08:00
 draft: false
 tags: ["Flink", "window"]
-categories: ["分布式"]
+categories: ["技术"]
 author: ""
 ---
 
