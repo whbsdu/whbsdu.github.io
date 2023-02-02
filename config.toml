@@ -1,7 +1,7 @@
 baseURL = "http://hobbin.wang/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "Hobbin's Blog - A programmer focus on data science"
+title = "Hobbin's Blog - A programmer's Daily Life"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
