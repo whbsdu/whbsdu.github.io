@@ -1,9 +1,9 @@
 ---
-title: “浅析chatGPT”
+title: "浅析chatGPT"
 date: 2023-02-07T14:31:00+08:00
 draft: false
-tags: [“技术”]
-categories: [“技术”]
+tags: ["技术"]
+categories: ["技术"]
 author: "Hobbin"
 ---
 
@@ -15,5 +15,5 @@ author: "Hobbin"
 
 ### chatGPT的应用
 
-###chatGPT可能带来的变化
+### chatGPT可能带来的变化
 
